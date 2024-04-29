@@ -23,6 +23,9 @@ Due to budgetary restrictions DUNE will pursue a staged approach in its construc
 In order to pursue its full physics scope, after Phase I DUNE will undertake several key improvements to all of its key components: this second form of the experiment is referred to as Phase II. The Far Detector will be completed by two extra liquid argon modules (nominally using the Verdical Drift technology) for a total fiducial mass of at least 40kt. The proton beam's power will augmented from 1.2 MW to 2.4 MW. The TMS will be replaced by a more capable high pressure gaseous Argon magnetized detector called ND-GAr. All of these upgrades are necessary for DUNE to reach one of its key stated goals: reach 5$\sigma$ sensitivity on CP violation over a wide range of $\delta_\textrm{CP}$ values. Additionally in Phase II, DUNE will be capable of producing independent measurements of $\sin^2{\theta_{13}}$ with precision comparable to that of reactors, it will have significant sensitivity to the $\theta_{23}$ octant, and will reach a world-leading sensitivity in a wide range of physics beyond the three neutrino paradigm as well as additional BSM physics and astrophysics. 
 
 \section{DUNE's facilities and design}
+In this section we give a brief overview of the components constituting the DUNE experiment, including the neutrino beamline, the Near Detector and the Far Detector. The muon spectrometer component of the Near Detector, which includes the ND-GAr detector for Phase I and the temporary muon spectrometer for Phase II, will be discussed in more detail in dedicated sections as they constitute the main focus of this thesis.
+
+
 \subsection{The LBNF beamline}
 \begin{figure}[!h]
      \centering
@@ -85,12 +88,13 @@ The PD's implemented in the FD2-VD follow the same general design of the ARAPUCA
 
 \begin{figure}[!h]
      \centering
-     \includegraphics[width=0.9\textwidth]{figures/ch3-DUNE/ndhall.JPG}
+     \includegraphics[width=0.99\textwidth]{figures/ch3-DUNE/ndhall.JPG}
      \caption{Schematic representation of the Far Detector experiment with its main components}
         \label{fig:NDhall}
 \end{figure}
 
-To enable oscillation measurements, DUNE must first predict the anticipated signal and background at the Far Detector based on oscillation parameters, followed by a comparison with measured flavour-tagged neutrino spectra. To generate this prediction, one must determine the neutrino flux at production, neutrino interaction cross-sections, and detector response—factors all affected by systematic uncertainties requiring constraint. The Near Detector (ND) is tailored to address each prediction component: it will gauge the un-oscillated neutrino beam flux both on-axis and at varying off-axis angles; refine models of neutrino interactions through cross-section and final state topology measurements; model detector responses relative to neutrino energy. Additionally, the ND is designed for operation within a high event rate environment, ensuring the requisite statistical coverage across the full phase-space. The ND will be of three detectors with complementary designs: ND-LAr, which will use a LArTPC technology similar to the FD modules; ND-GAr, a gaseous Argon TPC detector; and SAND, a magnetized beam monitor. ND-LAr and ND-GAr are movable off-axis and will contribute to the DUNE-PRISM program, while SAND remains fixed on-axis. A schematic depiction of the Near Detector, inclusive of all detectors, is presented in Figure \ref{fig:NDhall}. Due to budgetary reasons the ND-GAr detector will become available only during Phase II of the DUNE experiment. A much simpler detector referred to as the Temporary Muon Spectrometer (TMS) will replace it during Phase I. Both ND-GAr and the TMS will be discussed in a dedicated section along-side an alternative and now abandoned Phase I muon spectrometer design called ND-GAr-Lite. 
+To enable oscillation measurements, DUNE must first predict the anticipated signal and background at the Far Detector based on oscillation parameters, followed by a comparison with measured flavour-tagged neutrino spectra. To generate this prediction, one must determine the neutrino flux at production, neutrino interaction cross-sections, and detector response—factors all affected by systematic uncertainties requiring constraint. The Near Detector (ND) is tailored to address each prediction component \cite{DUNE:2021NDCDR}: it will gauge the un-oscillated neutrino beam flux both on-axis and at varying off-axis angles; refine models of neutrino interactions through cross-section and final state topology measurements; model detector responses relative to neutrino energy. Additionally, the ND is designed for operation within a high event rate environment, ensuring the requisite statistical coverage across the full phase-space. The ND will be of three detectors with complementary designs: ND-LAr, which will use a LArTPC technology similar to the FD modules; ND-GAr, a gaseous Argon TPC detector; and SAND, a magnetized beam monitor. ND-LAr and ND-GAr are movable off-axis and will contribute to the DUNE-PRISM program, while SAND remains fixed on-axis. A schematic depiction of the Near Detector, inclusive of all detectors, is presented in Figure \ref{fig:NDhall}. Due to budgetary reasons the ND-GAr detector will become available only during Phase II of the DUNE experiment. A much simpler detector referred to as the Temporary Muon Spectrometer (TMS) will replace it during Phase I. Both ND-GAr and the TMS will be discussed in a dedicated section along-side an alternative and now abandoned Phase I muon spectrometer design called ND-GAr-Lite. 
+
 
 \begin{figure}[!t]
      \centering
@@ -131,16 +135,134 @@ ND-LAr is a LArTPC detector engineered for operation within a high-rate environm
         \label{fig:SAND-all}
 \end{figure}
 
-ND-LAr and ND-GAr possess the capability to be translated up to 30 meters perpendicular to the neutrino beam axis, spanning angles from $0^{\circ}$ to $3^{\circ}$, a feature named DUNE-PRISM. With increasing off-axis angles, the mean energy of the neutrino flux diminishes while its energy dispersion narrows. Consequently, the Near Detector gains access to diverse un-oscillated neutrino flux profiles, combining them to predict the oscillated flux at the far detector. This data-centric methodology mitigates reliance on models. Moreover, a  of the DUNE-PRISM program is that the off-axis fluxes will variate in mean energies and spreads and will thus be dominated by distinct interaction types (e.g., quasi-elastic, resonant etc.). Access to this variety of samples will facilitate the disentanglement of cross-section effects, enhancing flux and interaction modeling.
-
+ND-LAr and ND-GAr possess the capability to be translated up to 30 meters perpendicular to the neutrino beam axis, spanning angles from $0^{\circ}$ to $3^{\circ}$, a feature named DUNE-PRISM. With increasing off-axis angles, the mean energy of the neutrino flux diminishes while its energy dispersion narrows. Consequently, the Near Detector gains access to diverse un-oscillated neutrino flux profiles, combining them to predict the oscillated flux at the far detector. This data-centric methodology mitigates reliance on models. Moreover, a key feature of the DUNE-PRISM program is that the off-axis fluxes will variate in mean energies and spreads and will thus be dominated by distinct interaction types (e.g., quasi-elastic, resonant etc.). Access to this variety of samples will facilitate the disentanglement of cross-section effects, enhancing flux and interaction modeling.
 
 The System for On-Axis Neutrino Detection (SAND) will function as a constant on-axis monitor of the neutrino beam, a crucial role for the DUNE-PRISM program. It will ensure that any differences in flux measured by ND-LAr and ND-GAr result from their off-axis position rather than anomalies in beam production. SAND's main structural components, along with its solenoid magnet, cryostat, and electromagnetic calorimeter, will be repurposed from the KLOE experiment (Figure \ref{fig:SAND-all}). The internal tracker design of SAND has recently been finalized, featuring a Straw Tube Tracker (STT) divided in modules. These modules will include a series of tunable passive slabs interleaved with tracking layers of 5mm diameter tubes. SAND will provide various targets, such as CH$_2$ and C, potentially highly useful in studying neutrino interactions. They will offer a clean sample of neutrino-on-hydrogen interactions by "subtraction," devoid of nuclear effects. Additionally, SAND will incorporate its own active target of liquid Argon called GRAIN, whose design is currently being finalized. 
 
 \section{The ND-GAr detector}
-\clearpage
-\subsection{The ALICE-inspired TPC}
-\subsection{The magnet and the high pressure system}
+% \begin{figure}
+%      \centering
+%      \begin{subfigure}[b]{0.4\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{figures/ch3-DUNE/ND_GAr.jpg}
+%          \caption{}
+%          \label{fig:ND-G}
+%      \end{subfigure}
+%      \hfill
+%      \begin{subfigure}[b]{0.58\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{figures/ch3-DUNE/SPY_X-section2.jpg}
+%          \caption{}
+%          \label{fig:ND-G-threshold}
+%      \end{subfigure}
+%         \caption{(a) Schematic view of the external components of ND-GAr with a cutaway showing the magnet, electro-magnetic calorimeter and the internal TPC  (b) Plot showing proton range in cm as a function of Kinetic Energy in MeV in double logarithmic scale. The different curves show the range dependency in different gaseous, liquid or solid media \cite{Lu}. }
+%         \label{fig:GAr}
+% \end{figure}
+
+\begin{figure}[t]
+     \centering
+     \includegraphics[width=0.6\textwidth]{figures/ch3-DUNE/SPY_X-section2.jpg}
+     \caption{Schematic representation of ND-GAr experiment with its main components}
+        \label{fig:ND-G}
+\end{figure}
+
+ND-GAr will be a magnetized detector with a magnetic field of 0.5T, mainly constituted of a high pressure gas time projection chamber (HPgTPC) surrounded by an electro-magnetic calorimeter (ECAL). A simple cut-away schematic of the detector is shown in Figure \ref{fig:GAr}. ND-GAr will fulfill two main goals: firstly it will act as a spectrometer measuring the charge and momentum of particles exiting ND-LAr; secondly it will offer its own sample of neutrino interactions inside the HPgTPC. The high pressure gas environment will offer relatively low tracking thresholds and enhanced particle identification (PID) performance when compared to LArTPC's, especially for pion-proton separation. The PID capabilities of ND-GAr specifically derive from a combination of $dE/dx$ measurements in the HPgTPC, $E/p$ measurements in the ECAL and the curvature momentum and sign selection measurements available from the magnetization of the TPC alongside range measurements in the ECAL.
+
+ND-GAr's spectrometer role mostly consists in identifying the sign and measuring the momentum of muons exciting ND-LAr. This is done to measure the spectrum of $\nu_\mu$ and $\Bar{\nu}_\mu$ reaching the near detector, through their CC interaction products. This is crucial to reach the oscillation measurement sensitivity desired by the experiment.
+
+\begin{figure}[t]
+     \centering
+     \includegraphics[width=0.7\textwidth]{figures/ch3-DUNE/threshold.png}
+     \caption{Schematic representation of ND-GAr experiment with its main components}
+        \label{fig:ND-G-threshold}
+\end{figure}
+
+ND-GAr's lower tracking thresholds as well as its superior PID capabilities and acceptance, will make kinematic regions not accessible to a LAr detector, available to the ND complex. The relationship between proton tracking threshold and tracking material can be seen in Figure \ref{fig:ND-G-threshold}. This is particularly important to enhance the ability of the ND of clarifying the relationship between the true and reconstructed energy in neutrino interactions on Argon. Nuclear effects such as final state interactions (FSI), Fermi motion and 2p2h effects can introduce significant systematic uncertainties in the reconstruction of the neutrino energy. Theoretical studies suggest for example that FSI can increase dramatically the number of final state protons in the kinetic range of 10s of MeV's and it's thus crutial for the ND to be able to measure them and identify them. This is possible with a HpGTPC which has lower tracking thresholds, but not in a LAr or solid detector such as ND-LAr or SAND. 
+
+It is also important for ND-GAr to characterize the spectrum of charged pions coming from $\nu_\mu$ and $\Bar{\nu}_\mu$ CC interactions. At very low energies, down to 20 MeV , this is essential because this is the region where FSI's are more prevalent. Only a gaseous detector has low enough energy thresholds to do it with a sufficient efficiency. At higher energies above 100 MeV, ND-GAr becomes essential in distinguishing the pion multiplicity, since in LAr the same pions tend to produce hadronic showers, while in ND-Gar's TPC they are more likely to  produce distinguishable tracks. Measuring neutral pions from $\nu_\mu$ and $\Bar{\nu}_\mu$ CC interactions in the same momentum range is also possible for ND-GAr thanks to its ECAL.
+
+\subsection{The HpGTPC}
+The design of ND-GAr's HPgTPC is closely related to the design of the ALICE experiment's TPC \cite{ALICE}. The basic detection mechanisms of ALICE's and ND-GAr's TPC's are identical. The primary ionization electrons are formed by the energy deposition of passing charged particles, and drifted towards the end-caps by a an electric field produced by a high voltage (HV) central electrode plane. The total drift region has a cylindrical shape with a diameter of $\sim 5m$ and a length of $\sim 5m$ and the electric field is oriented in parallel to the 0.5T magnetic field, in order to reduce transverse diffusion. At the end-caps, multi-wire proportional chambers (MWPC's) induce electron avalanches which produce a signal on an anode pad plane. Read-outs of the pad signals give hit coordinates in two dimensions, while the drift time provides the third.
+
+The read-out chambers or ROC's used in ALICE, contain the MWPC's and read-out pad planes and are divided in 18 trapezoidal regions, each including a smaller inner chamber (IROC) and an outer chamber (OROC). All of ALICE's ROC's will be re-installed in ND-GAr, as they have been replaced in the original detector by GEM-based ROC's \cite{Ferretti:2022yjd}. An additional central region of ROC's (CROC's) will fill the central regions of the read-out planes, which in ALICE was occupied by a silicon based central tracker and an inner field cage. 
+
+Despite all the common elements, some key differences between the design of the two TPC's exist: the two detectors will use different gases, with ALICE's base gas being a mixture Ne/CO$_2$/N$_2$ and ND-GAr using a mixture of Ar-CH$_4$ at 90\%-10\% molar fractions; ND-GAr will operate at a pressure 10 times larger than ALICE; the electronics and data acquisition systems will be completely re-designed to be closer to the LArPix technologies used in DUNE's LArTPC's; the field cage will only include an outer component, since the central region in ND-GAr will be part of the active volume of the detector, while in ALICE it was occupied by the the beam pipe and a silicon-based tracker.
+\begin{figure}[t]
+     \centering
+     \begin{subfigure}[b]{0.52\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/ch3-DUNE/ALICE_TPC_dEdx_Lippmann_2012.png}
+         \caption{}
+         \label{fig:ALICEPID}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.47\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/ch3-DUNE/PEP4-TPC-80Ar-20CH4-8_5atm_dEdx.png}
+         \caption{}
+         \label{fig:PEPPID}
+     \end{subfigure}
+        \caption{(a) Schematic view of the external components of ND-GAr with a cutaway showing the magnet, electro-magnetic calorimeter and the internal TPC  (b) Plot showing proton range in cm as a function of Kinetic Energy in MeV in double logarithmic scale. The different curves show the range dependency in different gaseous, liquid or solid media \cite{Lu}. }
+        \label{fig:PID}
+\end{figure}
+
+The HPgTPC is oriented so that the neutrino beam is perpendicular to the electric and magnetic fields. This is the most favorable orientation for measuring charged particles traveling along the neutrino beam direction. In ALICE the track reconstruction is done by combing ROC hits to form tracks following the trajectories of charged particles in the TPC. This is done for ND-GAr through the GArSoft software package which handles the simulation and reconstruction for the detector. A comprehensive description of this tool will be given later in Sec. and Sec. respectively. 
+
+In ALICE the ionization induced by charged particle tracks can be used to estimate the particle's $dE/dx$. When combined with a curvature momentum estimate, this can be used for PID. In Fig. \ref{fig:ALICEPID} we show the characteristic PID curves for charged particles produced in proton-proton collisions at $\sqrt{s}=7 \textrm{TeV}$. The band resolution of the different particle types $dE/dx$ curves is expected to be significantly improved in ND-GAr. The 10 times higher gas pressure in ND-GAr will result in a correspondend increase in ionization per unit track length. A better comparison can thus be made with the performance of the PID capabilities of PEP-4/9, which operated at 8.5 atmospheres: the experiment's $dE/dx$ curves are plotted in Fig. \ref{fig:PEPPID} showing good separation between particle types below a few GeV, including pions and muons which are problematic for lower material budget TPC's. 
+
+\begin{figure}[t]
+     \centering
+     \begin{subfigure}[b]{0.47\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/ch3-DUNE/dpmuon.pdf}
+         \caption{}
+         \label{fig:GArTPCdp}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.52\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/ch3-DUNE/muonpoverpfunc.pdf}
+         \caption{}
+         \label{fig:GArTPCdpoverp}
+     \end{subfigure}
+        \caption{(a) Schematic view of the external components of ND-GAr with a cutaway showing the magnet, electro-magnetic calorimeter and the internal TPC  (b) Plot showing proton range in cm as a function of Kinetic Energy in MeV in double logarithmic scale. The different curves show the range dependency in different gaseous, liquid or solid media \cite{Lu}. }
+        \label{fig:GARTPCdp}
+\end{figure}
+
+The resolution of a curvature momentum measurement in a TPC depends on the pad resolution as well as the multiple coulomb scattering (MS) degradation (see Sec for a more in depth discussion). The characteristics of the track and of the neutrino event also influence the curvature resolution. These include the particle's transverse momentum $p_T$ the track's length as well as the detector's occupancy at the time of the track formation.
+
+Given the randomized nature of particle track formation in a neutrino experiment, the distribution of the tracks length is expected to have a significant component of short tracks. For this reason fiducial cuts are imposed inside the TPC. Note that low energy particles that stop within the detector (primarily protons) would be reconstructed via their track length rather than their curvature. Within the fiducial volume ND-GAr will have a $4\pi$ acceptance. This include particles crossing the central cathode region, which is very thin (25 $\mu m$ of mylar).
+
+An early study was done using the GArSoft software suite, on the momentum resolution for muons coming from $\nu_\mu CC$ interactions in the HpGTPC using the LBNF flux. A fiducial cut was imposed on the interaction vertexes requiring a distance of at least 50 cm from the barrel walls and 30 cm from the end-caps. The momentum resolution was calculated in terms of fractional residuals defined as:
+    \begin{equation}
+        \frac{\Delta p}{p_\textrm{true}} = \frac{p_\textrm{reco}-p_\textrm{true}}{p_\textrm{true}}
+    \end{equation}
+where $p_\textrm{true}$ is the true initial momentum of the particle while $p_\textrm{reco}$ is the reconstructed one. The distribution was fitted with a double Gaussian function defining a "core" and a tails resolution. The resolution defined by the $\sigma$ of the residual distribution is of 2.7\% for the core distribution and 12\% for the tails as shown in Fig. \ref{fig:GArTPCdp}. The single Gaussian resolution is shown as a function of the muon track length in Fig. \ref{fig:GArTPCdpoverp}.
+
 \subsection{The electro-magnetic calorimeter}
+The main role of the ECAL will be to reconstruct electrons and photons coming from neutrino interactions. The ability of detecting photons and identifying their production point makes the reconstruction of $\pi_0$ from inside the HpGTPC possible. This will be especially important in the reconstruction of $\nu_e$ events for which the missed identification of $\pi_0$ produces important systematic uncertainties. The ECAL will also be important in determining the $t_0$ for particles coming from ND-LAr and rejecting external background such as rock muons and neutrons. It will offer a time precision at the sub-nanosecond level.
+
+The reference design of the ECAL is heavily inspired by the CALICE hadron calorimeter from the ALICE experiment \cite{CALICE:2010fpb} as well as the ECAL of the ND280 modules at T2K \cite{T2KUK:2013wkh}. It will have an octagon shape fully contained in the pressure vessel, with each octant composed by trapezoidal modules. The modules will contain alternating layers of active polystirene scintillator read out by SiPm's and absorber sheets. The active layers are segmented in tiles and strip offering an effective space resolution of the order of a few cm's.
+
+\begin{figure}[t]
+     \centering
+     \includegraphics[width=0.6\textwidth]{figures/ch3-DUNE/Spy.jpg}
+     \caption{Schematic representation of ND-GAr experiment with its main components}
+        \label{fig:Spy}
+\end{figure}
+
+\subsection{The SPY magnet system}
+The current integrated design for ND-GAr's solenoid, pressure vessel and yoke is named the Solenoid with Partial return Yoke (SPY) \cite{Bersani:2023rlw} and is largely based on the magnet system developed for the Multi Purpose Detector (MPD) at the NICA Collider at JINR \cite{Golovatyuk:2016zps}. The magnet system is composed of a superconducting magnet surrounded by an iron return yoke. To reduce dimensions and overall costs, the magnet and cryostat system has been designed to serve as the cylindrical component of the pressure vessel for the HpGTPC, while also providing support for the HpGTPC and the ECAL, which will be fully contained inside its volume.
+
+The magnet coil is composed of rectangular superconducting cables bent and grouped to form six identical sub-coils with an internal diameter of 7 m, a length of 0.9m and a thickness of 20 mm, operating at 5000A. The coils will be hosted in a cryostat reaching operating temperatures of 4.5 K to 4.7 K. The cooling elements of the cryostat will consist of pipes welded onto the outer surface of the coil formers hosting a thermosiphon-driven flow of liquid helium. 
+
+SPY's magnet will produce an overall magnetic field of 0.5T with a field uniformity of $\pm 1\%$. These field characteristics surpass the requirements necessary to achieve the particle reconstruction performance desired by ND-GAr. These include a minimum 3\% momentum resolution for muons exiting from ND-LAr and a performance at least as good as the Far Detector for particles produced in neutrino interactions on gas. The yoke has also been designed to reduce the amount of material between ND-LAr and ND-GAr to a minimum by removing a portion of the downstream barrel. This is important to ensure that the muons coming from ND-LAr loose as little energy as possible in un-instrumented portions of the detectors, reducing the relative uncertainties to a minimum.
+
+SPY is completed by a carbon steel return yoke, which presents several unique characteristics. The pole faces of the yoke have been designed to offer sufficient mechanical strength to act also as the end-caps of the detector's pressure vessel. This removes the necessity for the large domed heads that would normally be required for a pressure vessel of such a diameter, shortening the overall dimensions of the system by about 4m.
+
+\section{The temporary muon spectrometer}
+\clearpage
+
 \section{The temporary muon spectrometer}
 \subsection{ND-GAr-Lite}
 \subsection{TMS}
@@ -152,4 +274,4 @@ The System for On-Axis Neutrino Detection (SAND) will function as a constant on-
 \subsection{Supernova neutrinos}
 \subsection{Oscillation physics with atmospheric neutrinos}
 \subsection{Near Detector Physics}
-\subsection{ND-GAr Physics}
+%\subsection{ND-GAr Physics}
