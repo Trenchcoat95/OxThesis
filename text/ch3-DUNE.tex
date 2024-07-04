@@ -48,7 +48,7 @@ The wide band neutrino beam which is produced by the Beamline facilities, is nee
      \centering
      \includegraphics[width=0.99\textwidth]{figures/ch3-DUNE/Far_Detector.jpg}
      \caption{Schematic representation of the Far Detector experiment with its main components}
-        \label{fig:DUNEdiagram}
+        \label{fig:FarDetectorHall}
 \end{figure}
 The DUNE Far Detector will be composed of four LArTPC detector module, each containing a 10kt fiducial liquid Argon mass  and a total liquid Argon mass of 17.5kt. Each module will fit inside a cryostat. Of the four modules only the first two will be available during DUNE Phase I, the first one using an Horizontal Drift technology (originally identified as Single Phase \cite{DUNE:2020TDR4}) will be called FD1-HD and the second one using a Vertical Drift technology\cite{DUNE:2023TDRVD} (evolved from the Dual Phase Technology \cite{DUNE:2018mlo}) will be called FD2-VD. The last two modules will be employed during Phase II and are nominally set to be Vertical Drift detectors\cite{DUNE:2022Snowmass}.
 
@@ -62,7 +62,7 @@ The FD1-HD design combines a kt level fiducial mass with a sub-cm spacial resolu
      \centering
      \includegraphics[width=0.8\textwidth]{figures/ch3-DUNE/TheBoPicture.png}
      \caption{Schematic representation of the Far Detector experiment with its main components}
-        \label{fig:DUNEdiagram}
+        \label{fig:LArTPCdiagram}
 \end{figure}
 
 The FD1-HD detector modules consist of 4 separate liquid Argon filled drift volumes with a maximum drift length of 3.5 m. Each Volume is instrumented with a vertical cathode plane and an anode plane, for a total of three module-long (58.2 m) anode planes and two cathode planes. A field cage covers the spaces between the two, producing a stable 500 V/m electric field in the horizontal direction. The drift ionization electrons reach the anode planes in an order of a few milli-seconds. 
@@ -75,7 +75,7 @@ The scintillation photons produced by the passing charged particles in the liqui
      \centering
      \includegraphics[width=0.7\textwidth]{figures/ch3-DUNE/setup_new_updated.png}
      \caption{Schematic representation of the Far Detector experiment with its main components}
-        \label{fig:DUNEdiagram}
+        \label{fig:FDLArTPCModule}
 \end{figure}
 
 The FD2-VD design has developed from the R\&D experience accumulated by the DUNE collaboration with the ProtoDUNE-SP and ProtoDUNE-DP prototypes at the neutrino research facilities at CERN. The detector consists of several vertical drift modules enclosed in a large cryostat structure. Each module is divided into two vertical drift regions 6.5 m in height, by an horizontal cathode and feature two anode planes, one close to the cryostat top, just below the surface of the liquid Argon region and one close to the bottom of the cryostat. Field cage modules hang vertically around the module's perimeter. The 450 V/cm electric field drifts the ionisation electrons, either upwards or downwards depending on the drift region. The vertical design of the FD2-VD offers a slightly larger instrumented module compared to FD1-HD and it's more cost-effective thanks to its high-modularity and general structure and geometry. 
@@ -140,6 +140,7 @@ ND-LAr and ND-GAr possess the capability to be translated up to 30 meters perpen
 The System for On-Axis Neutrino Detection (SAND) will function as a constant on-axis monitor of the neutrino beam, a crucial role for the DUNE-PRISM program. It will ensure that any differences in flux measured by ND-LAr and ND-GAr result from their off-axis position rather than anomalies in beam production. SAND's main structural components, along with its solenoid magnet, cryostat, and electromagnetic calorimeter, will be repurposed from the KLOE experiment (Figure \ref{fig:SAND-all}). The internal tracker design of SAND has recently been finalized, featuring a Straw Tube Tracker (STT) divided in modules. These modules will include a series of tunable passive slabs interleaved with tracking layers of 5mm diameter tubes. SAND will provide various targets, such as CH$_2$ and C, potentially highly useful in studying neutrino interactions. They will offer a clean sample of neutrino-on-hydrogen interactions by "subtraction," devoid of nuclear effects. Additionally, SAND will incorporate its own active target of liquid Argon called GRAIN, whose design is currently being finalized. 
 
 \section{The ND-GAr detector}
+\label{sec:DUNE-ND-GAr}
 % \begin{figure}
 %      \centering
 %      \begin{subfigure}[b]{0.4\textwidth}
@@ -166,7 +167,7 @@ The System for On-Axis Neutrino Detection (SAND) will function as a constant on-
         \label{fig:ND-G}
 \end{figure}
 
-ND-GAr will be a magnetized detector with a magnetic field of 0.5T, mainly constituted of a high pressure gas time projection chamber (HPgTPC) surrounded by an electro-magnetic calorimeter (ECAL). A simple cut-away schematic of the detector is shown in Figure \ref{fig:GAr}. ND-GAr will fulfill two main goals: firstly it will act as a spectrometer measuring the charge and momentum of particles exiting ND-LAr; secondly it will offer its own sample of neutrino interactions inside the HPgTPC. The high pressure gas environment will offer relatively low tracking thresholds and enhanced particle identification (PID) performance when compared to LArTPC's, especially for pion-proton separation. The PID capabilities of ND-GAr specifically derive from a combination of $dE/dx$ measurements in the HPgTPC, $E/p$ measurements in the ECAL and the curvature momentum and sign selection measurements available from the magnetization of the TPC alongside range measurements in the ECAL.
+ND-GAr will be a magnetized detector with a magnetic field of 0.5T, mainly constituted of a high pressure gas time projection chamber (HPgTPC) surrounded by an electro-magnetic calorimeter (ECAL). A simple cut-away schematic of the detector is shown in Figure \ref{fig:ND-G}. ND-GAr will fulfill two main goals: firstly it will act as a spectrometer measuring the charge and momentum of particles exiting ND-LAr; secondly it will offer its own sample of neutrino interactions inside the HPgTPC. The high pressure gas environment will offer relatively low tracking thresholds and enhanced particle identification (PID) performance when compared to LArTPC's, especially for pion-proton separation. The PID capabilities of ND-GAr specifically derive from a combination of $dE/dx$ measurements in the HPgTPC, $E/p$ measurements in the ECAL and the curvature momentum and sign selection measurements available from the magnetization of the TPC alongside range measurements in the ECAL.
 
 ND-GAr's spectrometer role mostly consists in identifying the sign and measuring the momentum of muons exciting ND-LAr. This is done to measure the spectrum of $\nu_\mu$ and $\Bar{\nu}_\mu$ reaching the near detector, through their CC interaction products. This is crucial to reach the oscillation measurement sensitivity desired by the experiment.
 
@@ -212,14 +213,14 @@ In ALICE the ionization induced by charged particle tracks can be used to estima
 
 \begin{figure}[t]
      \centering
-     \begin{subfigure}[b]{0.47\textwidth}
+     \begin{subfigure}[b]{0.7\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/ch3-DUNE/dpmuon.pdf}
          \caption{}
          \label{fig:GArTPCdp}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.52\textwidth}
+     \begin{subfigure}[b]{0.7\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/ch3-DUNE/muonpoverpfunc.pdf}
          \caption{}
@@ -261,17 +262,78 @@ SPY's magnet will produce an overall magnetic field of 0.5T with a field uniform
 SPY is completed by a carbon steel return yoke, which presents several unique characteristics. The pole faces of the yoke have been designed to offer sufficient mechanical strength to act also as the end-caps of the detector's pressure vessel. This removes the necessity for the large domed heads that would normally be required for a pressure vessel of such a diameter, shortening the overall dimensions of the system by about 4m.
 
 \section{The temporary muon spectrometer}
+\subsection{TMS}
+\begin{figure}[t]
+     \centering
+     \includegraphics[width=0.6\textwidth]{figures/ch3-DUNE/TMS.png}
+     \caption{Schematic representation of ND-GAr experiment with its main components}
+        \label{fig:TMS}
+\end{figure}
+The temporary muon spectrometer (TMS) is a magnetized steel range stack detector which is set to become operative during DUNE Phase I. Its main role will be to measure the momentum and charge of muons exiting ND-LAr. This will increase the acceptance of ND-LAr making the performance of the two combined detectors comparable to that of the FD.
+
+Both the Argon Target and the technology of ND-LAr are essential to predict the rate and spectrum of neutrino-argon interactions expected at the FD and achieve the level of control over the systematics necessary for the Phase I physics goals. The inclusion of a magnetized muon catcher to ND-LAr is important to improve the muon momentum reconstruction performance in the key energy range between 0.5 and 5 GeV reaching a resolution of the order of $\delta p / p \sim 5\%$. The sign selection, which is not available using ND-LAr alone, is crucial in the $\delta_\textrm{CP}$ measurement. This is especially true in reverse horn current where the beam will experience a large contamination of neutrino interactions comparable to the desired anti-neutrino interactions. In measuring $\Bar{\nu}_e$ appearance, the sample of $\nu_e$ interactions needs to be carefully accounted for.
+
+TMS consists of 100 alternating layers of magnetized steel absorber and plastic scintillator. A schematic representation of the detector is shown in Fig. \ref{fig:TMS} . Each scintillator layer consists of four panels divided into 48 strips, all 300 cm long and 3.5 cm wide. The strips in each layer are tilted in an alternating pattern by $\pm 3^\circ$ with respect to the vertical direction, providing U and V views. Each layer of steel will divided into three colums, each magnetized by two electrified coils. The coils which surround the central block produce a magnetic field which faces downwards, while the two later blocks have a magnetic field pointing  in the opposite direction. The thickness of the steel plates is of 15 mm for the first 40 layers upstream and of 40 mm in all the others. The thickness of the steel layers was chosen in order to optimize the particles' energy deposition.
+
+In TMS the muon momentum will be measured by range, while the charge sign will be determined based on the curvature of the particle trajectory. The scintillator layers are instrumented with ADC's and can provide calorimetric information as well as position measurements. This information can be used in many ways: the Bragg peak can be identified to identify stopping muons more effectively; muons experiencing very high energy loss via bremmstrahlung can be selected and more effectively reconstructed; the stopping point can be more effectively found by studying the evolution of $1/\beta^2$ along the track. Calorimetric measurements of muon energy can also be made but they are not expected to be competitive with the range measurements. 
+
+The capabilities of TMS will be sufficient to reach the physics goals of the DUNE collaboration during Phase I, where the uncertainties will be dominated by the lack of statistics. This won't be true for Phase II where the impact of the systematics will be much larger. This is why TMS will be substituted by a more capable Near Detector (MCND) module, the leading design currently corresponding to ND-GAr. 
+
+\subsection{ND-GAr-Lite}
+\label{Sec: DUNE-GArLite}
+
+ND-GAr was an alternative Phase I muon spectrometer design for the ND which would have become possible in the case that early funds for the construction of the SPY magnet system had become available (see Fig. \ref{fig:Lite} for a schematic representation of the design). The detector would have included all the components of the SPY system while the central volume of the magnet would have been instrumental with a minimal amount of Minerva-inspired scintillator tracking planes. The advantage of this approach was to provide a natural staging to the construction of ND-GAr, reducing overall cost and wastes compared to the TMS design which is set to be fully removed from the ND in the transition between Phase I and II. The ND-GAr-Lite design was eventually abandoned by the collaboration as it became clear that the funds necessary to build the SPY magnet were not going to be available for Phase I. 
+
+Two plans were originally envisioned for the transition between ND-GAr and ND-GAr-Lite. The first approach was the most straightforward and consisted in building the ECAL and HpGTPC above ground and lowering them in the ND chamber at the same time. They would have been then mounted inside the already functioning spy magnet and enclosed inside the pressure vessel. The estimated shut-down for such a scenario would have been of the order of 8 months, similar to the 6 months estimated for TMS. The second plan consisted in a staged approach where the ECAL would have been inserted first, while keeping the tracking planes in place. The HpGTPC would have been inserted soon after completing the design. This staged approach had the potential to reduce beam shut-down to a minimum but was never fully studied.
+
+\begin{figure}[t]
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ch3-DUNE/MPD_Magnet_w_Tracker_Planes.jpg}
+     \caption{Schematic representation of ND-GAr-Lite experiment with its main components}
+        \label{fig:Lite}
+\end{figure}
+
+The nominal design for ND-GAr-Lite’s tracker consisted of a series of rectangular tracking stations, all roughly 5.8m tall and 5.1m tall, positioned perpendicularly to the beam direction.
+Each plane would have included a x-plane and a y-plane composed of triangularly shaped scintillator bars, approximately 4cm wide and 2 cm tall. Each bar would be equipped with a detector module
+called quad-counter, which would include a motherboard reading out 4 SiPMs which in turn would detect the light from 4 wavelength-shifting fibers. 
+
+An additional muon tagger plane to be placed between ND-LAr and ND-GAr-Lite was also considered by the collaboration. This muon-tagging system would not have been removed in the transition between Phase I and II and would have been especially useful to ND-GAr for $\mu/\pi$ separation. A muon-tagging system is still being considered by the collaboration but no mature design exists.  
+
+% \begin{figure}[t]
+%      \centering
+%      \includegraphics[width=0.7\textwidth]{figures/ch3-DUNE/6plane.png}
+%      \caption{Schematic representation of ND-GAr-Lite experiment with its main components}
+%         \label{fig:Lite6}
+% \end{figure}
+
+In order to form a track, ND-GAr-Lite requires at least three hits in three unique planes. The nominal tracker design included 5 planes, placed symmetrically about the center of the internal cylinder of the detector. This configuration was eventually substituted by a new design which used 6 unequal planes, mostly placed in the upstream half of the ND-GAr cryostat. The nominal design had a tracking momentum threshold for muons exiting ND-LAr of 1 GeV/c and an angular acceptance of $\sim$ 20 deg. The new arrangement extended the tracking capability to cover nearly all of the muon kinematic phase space, improved the overall tracking efficiency, and lowered the threshold to track muons with initial momenta as low as 700 MeV/c.
+
+For both detector configurations the relative momentum resolution for ND-LAr generated muons was studied and oscillated between 2\% and 4\% over a wide range of momenta. These results satisfied the $\leq 4\%$ ND requirements for a Phase I muon spectrometer.  
+
+\section{Dune's scientific program}
+\subsection{Neutrino oscillation measurements}
+The central aim of DUNE is to challenge the three-flavour neutrino oscillation paradigm at an unprecedented level of precision. It will do this by performing neutrino oscillation parameter measurements which will allow to shed light on key questions in the field. The neutrino mass ordering remains undetermined with current measurement only marginally preferring the normal hierarchy hypothesis.  The value of $\delta_\textrm{CP}$ is poorly constrained with all possible values in the range between $\pi$ and $2\pi$ being consistent with data. Finally the value of $\theta_{23}$ is known to be close to the maximal mixing value $\pi/4$ but its octant is still unresolved. DUNE aims to provide answers to all these unopened questions.
+
+In long-baseline experiments such as DUNE that have access to horn-focused beams producing either $\nu_\mu$ or $\bar{\nu}_\mu$ dominant fluxes, the oscillation parameters can be studied either through disappearance or appearance measurements. While due to the almost maximal value of $\theta_{23}$ the $\nu_\mu\rightarrow\nu_\tau$ is the dominant one, it can only be studied indirectly through disappearance. This is due to the fact that the oscillation maxima occur at energies below the threshold for $\tau$-lepton production in $\nu_\tau \ CC$ interactions. On the other hand the sub-dominant channel $\nu_\mu\rightarrow\nu_e$ allows for the detailed study of many oscillation properties through the measurement of of energy dependent $\nu_e$ and $\bar{\nu}_e$.
+
+If we assume a constant matter density the oscillation probability $\nu_\mu\rightarrow\nu_e$ can be written as:
+\begin{equation} \label{eq1}
+    \begin{split}
+        P(\nu_\mu\rightarrow\nu_e) & = \sin^2\theta_{23} \sin^22\theta_{13} \frac{\sin^22(\Delta_{31}-aL)}{(\Delta_{31}-aL)^2}\Delta_{31}^2\\
+         &  +\sin2\theta_{23} \sin2\theta_{13} \sin2\theta_{12} \frac{\sin^22(\Delta_{31}-aL)}{(\Delta_{31}-aL)}\Delta_{31}\\
+         & \times\frac{\sin(aL)}{(aL)}\Delta_{21} \cos(\Delta_{31}+\delta_\textrm{CP})\\
+         & +\cos^2\theta_{23} \sin^22\theta_{12} \frac{\sin(aL)}{(aL)}\Delta_{21} \Delta_{21}^2
+    \end{split}
+\end{equation}
+
+where $\Delta_{ij}=\Delta m_{ij}^2L/4E_\nu$, $a = G_FN_e\sqrt{2}$, $G_F$ is the Fermi constant, $N_e$ is the number density of electrons in the Earth, $L$ is the baseline in km, and $E_\nu$ is the neutrino energy in GeV. In the
+equation above, both $\delta_\textrm{CP}$ and $a$ switch signs in going from the $\nu_\mu\rightarrow\nu_e$ to the $\bar{\nu}_\mu\rightarrow\Bar{\nu}_e$ channel which implies that a neutrino-antineutrino asymmetry is introduced both by CPV ($\delta_\textrm{CP}$) and the matter effect ($a$)
 \clearpage
 
-\section{The temporary muon spectrometer}
-\subsection{ND-GAr-Lite}
-\subsection{TMS}
-\section{Dune's scientific program}
-\subsection{Sensitivities and systematics}
-\subsection{Mass ordering and $\delta_\textrm{CP}$}
-\subsection{Precision measurements}
 \subsection{Proton decay}
 \subsection{Supernova neutrinos}
-\subsection{Oscillation physics with atmospheric neutrinos}
-\subsection{Near Detector Physics}
+\subsection{Ancillary measurement opportunities}
+\section{Near Detector Physics}
+\subsection{Flux and cross section measurements}
+\subsection{Beyond the standard model physics and other SM opportunities}
 %\subsection{ND-GAr Physics}
