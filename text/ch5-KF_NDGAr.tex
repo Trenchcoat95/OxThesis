@@ -1365,6 +1365,7 @@ With the \texttt{CKF} fully implemented in GArSoft, additional tests could be pe
 
 Another feature that could be tested and compared using the two equivalent data samples, was the quality of the interaction vertex fitting (see Sec. \ref{Sec: Vertexing} for a brief description) using the reconstructions provided by the two algorithms. In Fig. \ref{fig:Vert_Integration} we show the vertex fit residual distributions in all three dimensions, fitted to a Cauchy distribution defined as:
 \begin{equation}
+    \label{eq:Cauchy}
     C=\frac{K}{\pi}\frac{b}{(x-m)^2+b^2},
 \end{equation}
 with $K$ being a normalization factor, $m$ being the center of the distribution and $b$ being the width. The \texttt{CKF} results are shown in the top row, while the \texttt{GKF} ones are shown in the bottom row. The resolution obtained with the new algorithm, which we can define as the width $b$ of the Cauchy fits, consistently outperforms the one obtained with the \texttt{GKF}. 
